@@ -1,0 +1,1 @@
+require 'missed_localizable_strings/gem_version'
