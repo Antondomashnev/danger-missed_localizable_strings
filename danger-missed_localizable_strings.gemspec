@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['antondomashnev@gmail.com']
   spec.description   = 'A Danger plugin to check missing localizable strings.'
   spec.summary       = 'A Danger plugin to check missing localizable strings.'
-  spec.homepage      = 'https://github.com/Anton Domashnev/danger-missed_localizable_strings'
+  spec.homepage      = 'https://github.com/Antondomashnev/danger-missed_localizable_strings'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
