@@ -1,4 +1,5 @@
 # coding: utf-8
+# rubocop:disable Metrics/LineLength
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'missed_localizable_strings/gem_version.rb'
@@ -47,3 +48,4 @@ Gem::Specification.new do |spec|
   # This will stop test execution and let you inspect the results
   spec.add_development_dependency 'pry'
 end
+# rubocop:enable Metrics/LineLength
