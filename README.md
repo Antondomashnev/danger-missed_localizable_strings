@@ -1,6 +1,7 @@
 # danger-missed_localizable_strings
 
 [![Build Status](https://travis-ci.org/Antondomashnev/danger-missed_localizable_strings.svg?branch=master)](https://travis-ci.org/Antondomashnev/danger-missed_localizable_strings)
+[![Gem Version](https://badge.fury.io/rb/danger-missed_localizable_strings.svg)](https://badge.fury.io/rb/danger-missed_localizable_strings)
 
 Don't let developers to forget about the app localization.
 Allow [Danger](https://github.com/danger/danger) to check whether there are
