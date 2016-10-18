@@ -3,13 +3,12 @@ module Danger
   # Sometimes developer adds new key in one Localizable.strings file
   # and forgets to add the same key in another Localizable.strings file.
   # This simple plugin warns the developer about these possible mistakes.
-  # Some parts of the code were taken from: https://github.com/AirHelp/danger-duplicate_localizable_strings
   #
   # @example Checks missing localizable strings in PR changeset
   #
-  # check_localizable_omissions
+  #          check_localizable_omissions
   #
-  # @see  Anton Domashnev/danger-missed_localizable_strings
+  # @see  antondomashnev/danger-missed_localizable_strings
   # @tags localization, cocoa
   #
   class DangerMissedLocalizableStrings < Plugin
