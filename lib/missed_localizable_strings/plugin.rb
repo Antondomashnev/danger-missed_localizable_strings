@@ -45,7 +45,7 @@ module Danger
         missed_keyes = most_modified_strings_keys - modified_keyes
         next if missed_keyes.empty?
         missed_keyes.each do |key|
-          missed_entries << { 'file' => file_name, 'key' => key }
+          missed_entries << { "file" => file_name, "key" => key }
         end
       end
       missed_entries
@@ -66,8 +66,8 @@ module Danger
       message << "| ---- | --- |\n"
 
       missed_entries.each do |entry|
-        file = entry['file']
-        key = entry['key']
+        file = entry["file"]
+        key = entry["key"]
 
         message << "| #{file} | #{key.strip} | \n"
       end
@@ -83,10 +83,10 @@ module Danger
         lines = File.readlines(file)
 
         # Grab just the keys, we don't need the translation
-        keys = lines.map { |e| e.split('=').first }
+        keys = lines.map { |e| e.split("=").first }
         # Filter newlines and comments
         keys = keys.select do |e|
-          e != "\n" && !e.start_with?('/*') && !e.start_with?('//')
+          e != "\n" && !e.start_with?("/*") && !e.start_with?("//")
         end
         keys_from_file[file] = keys
       end
@@ -95,7 +95,7 @@ module Danger
 
     def not_deleted_localizable_files
       files = (git.modified_files + git.added_files) - git.deleted_files
-      localizable_files = files.select { |line| line.end_with?('.strings') }
+      localizable_files = files.select { |line| line.end_with?(".strings") }
       localizable_files
     end
   end

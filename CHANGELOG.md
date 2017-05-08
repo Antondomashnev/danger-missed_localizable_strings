@@ -1,3 +1,7 @@
+## 1.0.2
+
+* Support Danger 5.x - antondomashnev
+
 ## 1.0.1
 
 * Improve documentation - antondomashnev

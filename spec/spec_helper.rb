@@ -1,22 +1,22 @@
-require 'pathname'
-ROOT = Pathname.new(File.expand_path('../../', __FILE__))
-$LOAD_PATH.unshift((ROOT + 'lib').to_s)
-$LOAD_PATH.unshift((ROOT + 'spec').to_s)
+require "pathname"
+ROOT = Pathname.new(File.expand_path("../../", __FILE__))
+$LOAD_PATH.unshift((ROOT + "lib").to_s)
+$LOAD_PATH.unshift((ROOT + "spec").to_s)
 
-require 'bundler/setup'
-require 'pry'
+require "bundler/setup"
+require "pry"
 
-require 'rspec'
-require 'danger'
+require "rspec"
+require "danger"
 
 # Use coloured output, it's the best.
 RSpec.configure do |config|
-  config.filter_gems_from_backtrace 'bundler'
+  config.filter_gems_from_backtrace "bundler"
   config.color = true
   config.tty = true
 end
 
-require 'danger_plugin'
+require "danger_plugin"
 
 # These functions are a subset of https://github.com/danger/danger/blob/master/spec/spec_helper.rb
 # If you are expanding these files, see if it's already been done ^.
@@ -34,7 +34,7 @@ def testing_ui
 
   cork = Cork::Board.new(out: @output)
   def cork.string
-    out.string.gsub(/\e\[([;\d]+)?m/, '')
+    out.string.gsub(/\e\[([;\d]+)?m/, "")
   end
   cork
 end
@@ -44,11 +44,11 @@ end
 # running a PR on TravisCI
 def testing_env
   {
-    'HAS_JOSH_K_SEAL_OF_APPROVAL' => 'true',
-    'TRAVIS_PULL_REQUEST' => '800',
-    'TRAVIS_REPO_SLUG' => 'artsy/eigen',
-    'TRAVIS_COMMIT_RANGE' => '759adcbd0d8f...13c4dc8bb61d',
-    'DANGER_GITHUB_API_TOKEN' => '123sbdq54erfsd3422gdfio'
+    "HAS_JOSH_K_SEAL_OF_APPROVAL" => "true",
+    "TRAVIS_PULL_REQUEST" => "800",
+    "TRAVIS_REPO_SLUG" => "artsy/eigen",
+    "TRAVIS_COMMIT_RANGE" => "759adcbd0d8f...13c4dc8bb61d",
+    "DANGER_GITHUB_API_TOKEN" => "123sbdq54erfsd3422gdfio"
   }
 end
 

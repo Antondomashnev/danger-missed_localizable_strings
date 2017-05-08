@@ -1,1 +1,1 @@
-require 'missed_localizable_strings/gem_version'
+require "missed_localizable_strings/gem_version"

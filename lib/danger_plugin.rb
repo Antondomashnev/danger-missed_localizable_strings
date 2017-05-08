@@ -1,1 +1,1 @@
-require 'missed_localizable_strings/plugin'
+require "missed_localizable_strings/plugin"
