@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    danger-missed_localizable_strings (1.0.3)
+    danger-missed_localizable_strings (1.0.4)
       danger-plugin-api (~> 1.0)
 
 GEM
