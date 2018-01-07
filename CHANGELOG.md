@@ -1,5 +1,10 @@
 ## 1.0.3
 
+* Simplify config - antondomashnev
+* Codestyle update - antondomashnev
+
+## 1.0.3
+
 * Update dependencies - antondomashnev
 
 ## 1.0.2
