@@ -1,4 +1,8 @@
-## 1.0.3
+## 1.0.5
+
+* Fix tests - antondomashnev
+
+## 1.0.4
 
 * Simplify config - antondomashnev
 * Codestyle update - antondomashnev
