@@ -1,3 +1,7 @@
+## 1.0.3
+
+* Update dependencies - antondomashnev
+
 ## 1.0.2
 
 * Support Danger 5.x - antondomashnev
