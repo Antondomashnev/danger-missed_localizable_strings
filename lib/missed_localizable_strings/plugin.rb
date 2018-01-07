@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Danger
   #
   # Sometimes developer adds new key in one Localizable.strings file
