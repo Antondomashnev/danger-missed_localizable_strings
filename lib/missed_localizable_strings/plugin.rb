@@ -62,7 +62,7 @@ module Danger
     # @return  [void]
     #
     def print_missed_entries(missed_entries)
-      message = "#### Found missed keyes in Localizable.strings files \n\n"
+      message = +"#### Found missed keyes in Localizable.strings files \n\n"
 
       message << "| File | Key |\n"
       message << "| ---- | --- |\n"
