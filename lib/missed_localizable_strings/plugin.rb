@@ -23,6 +23,18 @@ module Danger
     #
     def check_localizable_omissions
       localizable_files = not_deleted_localizable_files
+      check_localizable_omissions_in_files(localizable_files)
+    end
+    
+    #
+    # Checks whether there are any missed entries in
+    # the given Localizable.strings.
+    # 
+    # @param localizable_files {.strings file: [Array of files paths]}
+    #
+    # @return  [void]
+    #
+    def check_localizable_omissions_in_files(localizable_files)
       keys_by_file = extract_keys_from_files(localizable_files)
       entries = localizable_strings_missed_entries(keys_by_file)
       print_missed_entries entries unless entries.empty?
